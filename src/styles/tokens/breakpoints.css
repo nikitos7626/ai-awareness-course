@@ -1,0 +1,20 @@
+/* Soft Media Group — Breakpoints (softmg.tech web layer)
+   The deck has no responsive needs (fixed 1920×1080 stage), so this token
+   set is new — the site is the first place breakpoints matter.
+
+   CSS custom properties can't be read inside an @media condition, so these
+   exist as the single documented source of truth: copy the literal px value
+   into your @media rule, don't invent a new one. JS (matchMedia, layout
+   logic) CAN read them via getComputedStyle(document.documentElement).
+
+   Fractional legacy breakpoints (1700/1670/1600/1439/1210/860/850/583/582)
+   are retired — prefer fluid type/containers for in-between cases instead
+   of adding another fixed step. */
+
+:root {
+  --smg-bp-desktop-xl: 1920px;  /* large screens, wide promo blocks */
+  --smg-bp-desktop:    1440px;  /* primary desktop */
+  --smg-bp-laptop:     1024px;  /* laptops, dense desktop */
+  --smg-bp-tablet:      680px;  /* tablets, large phones */
+  /* below --smg-bp-tablet = mobile */
+}

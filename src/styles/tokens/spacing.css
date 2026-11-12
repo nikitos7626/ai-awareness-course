@@ -1,0 +1,45 @@
+/* Soft Media Group — Spacing & radius tokens
+   Deck geometry: 80px page margins, ~47–100px section gaps, pill radius 200,
+   logo-mark corner radius ≈ 28.5% (39.018 / 136.565). */
+
+:root {
+  /* Spacing scale */
+  --smg-space-1:  8px;
+  --smg-space-2:  16px;
+  --smg-space-3:  24px;
+  --smg-space-4:  32px;
+  --smg-space-5:  47px;    /* deck stack gap */
+  --smg-space-6:  68px;
+  --smg-space-7:  80px;    /* deck page margin */
+  --smg-space-8:  100px;   /* deck section gap */
+  --smg-space-9:  118px;   /* deck header padding */
+
+  /* Radius */
+  --smg-radius-xs:   4px;    /* checkbox, input, small servicey controls (web UI) */
+  --smg-radius-sm:   12px;
+  --smg-radius-md:   24px;
+  --smg-radius-lg:   40px;   /* large cards */
+  --smg-radius-mark: 28.5%;  /* logo squircle */
+  --smg-radius-pill: 200px;  /* buttons & chips */
+
+  /* Web UI core spacing (softmg.tech) — plain 8px grid for forms, nav,
+     cards; the deck-tuned values above (47/68/80/100/118) stay for slide
+     geometry. Kept separate rather than merged: one is stage math, the
+     other is a component rhythm. */
+  --smg-web-space-1: 8px;
+  --smg-web-space-2: 12px;
+  --smg-web-space-3: 16px;
+  --smg-web-space-4: 24px;
+  --smg-web-space-5: 32px;
+  --smg-web-space-6: 40px;
+  --smg-web-space-7: 48px;
+
+  /* Borders */
+  --smg-border-width: 1px;
+  --smg-border-width-strong: 2px;
+
+  /* Shadows — the brand is largely flat; soft violet lift on floating cards */
+  --smg-shadow-sm: 0 2px 8px rgba(5, 8, 30, 0.06);
+  --smg-shadow-md: 0 12px 32px rgba(5, 8, 30, 0.10);
+  --smg-shadow-violet: 0 20px 48px rgba(98, 40, 255, 0.24);
+}

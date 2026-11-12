@@ -1,0 +1,81 @@
+/* Soft Media Group — Color tokens
+   Extracted from the SMG Telegram Figma file. Values are verbatim. */
+
+:root {
+  /* ---- Brand violet ---- */
+  --smg-violet: #6228FF;         /* clr/base/violet — primary brand (rgb 98,40,255) */
+  --smg-violet-logo: #622BFF;    /* logo mark fill (rgb 98,43,255) */
+  --smg-violet-700: #7042D2;     /* muted violet on imagery */
+  --smg-violet-500: #816DFF;     /* light violet accent */
+  --smg-violet-300: #B09CE5;     /* desaturated violet */
+  --smg-violet-200: #D0BFFF;     /* soft violet */
+  --smg-violet-150: #DED2FF;     /* softer violet */
+  --smg-violet-100: #EEE7FF;     /* violet tint surface */
+  --smg-violet-50:  #F6F1FF;     /* faint violet surface */
+  --smg-violet-ink: #2E008E;     /* deep violet (rgb 46,0,142) */
+
+  /* ---- Accents ---- */
+  --smg-cyan:   #98FFFF;         /* electric cyan (rgb 152,255,255) */
+  --smg-blue:   #26A2DF;         /* sky blue (rgb 38,162,223) */
+  --smg-orange: #FCC188;         /* warm sand (rgb 252,193,136) */
+
+  /* ---- Neutrals (ink) ---- */
+  --smg-ink:      #212121;       /* primary text (rgb 33,33,33) */
+  --smg-black:    #161616;       /* near-black surfaces (rgb 22,22,22) */
+  --smg-black-900:#101010;
+  --smg-black-950:#0C0C0C;
+  --smg-black-pure:#000000;
+  --smg-ink-blue: #05081E;       /* blue-black (rgb 5,8,30) */
+
+  /* ---- Neutrals (gray) ---- */
+  --smg-gray-50:  #F2F4F5;       /* lightest surface (rgb 242,244,245) */
+  --smg-gray-100: #F2F3F5;       /* light surface (rgb 242,243,245) */
+  --smg-gray-200: #E9E9E9;       /* hairline / divider (rgb 233,233,233) */
+  --smg-gray-300: #D9D9D9;       /* border (rgb 217,217,217) */
+  --smg-gray-500: #868686;       /* muted text (rgb 134,134,134) */
+  --smg-white:    #FFFFFF;
+
+  /* ---- Semantic ---- */
+  --smg-danger:        #FF6464;       /* alert / error stroke (rgb 255,100,100) */
+  --smg-danger-soft:   #FFF1F2;       /* soft error background */
+  --smg-success:       #10B981;       /* verified / success stroke (emerald) */
+  --smg-success-soft:  #ECFDF5;       /* soft success background */
+
+  /* Enhanced a11y focus ring for WCAG 2.1 AA keyboard navigation */
+  --smg-focus-ring-a11y: 0 0 0 2px #FFFFFF, 0 0 0 4px var(--smg-violet);
+
+  /* ---- Service blue (softmg.tech web layer) ----
+     Functional colour for embedded widgets, maps, chat bubbles and other
+     technical/external UI. Deliberately NOT the brand accent — never mix
+     with violet inside the same component (e.g. don't tint a violet button
+     with info-blue on hover). Distinct from --smg-blue (#26A2DF), which is
+     a decorative deck accent, not a UI-state colour. */
+  --smg-info-500: #007AFF;       /* service blue — default */
+  --smg-info-600: #005FCC;       /* service blue — hover / pressed */
+
+  /* ---- Soft violet tint (alpha, for hover/focus washes) ---- */
+  --smg-violet-soft: rgba(98, 40, 255, 0.08);   /* hover/active wash under chips, list rows, focus */
+
+  /* ---- Extra neutral step (button pressed state on white surfaces) ---- */
+  --smg-gray-350: #E2E7E9;       /* active/pressed bg for white buttons */
+
+  /* ==== Semantic aliases ==== */
+  --smg-bg:            var(--smg-white);
+  --smg-bg-brand:      var(--smg-violet);
+  --smg-bg-dark:       var(--smg-black);
+  --smg-surface:       var(--smg-white);
+  --smg-surface-muted: var(--smg-gray-100);
+  --smg-surface-tint:  var(--smg-violet-50);
+
+  --smg-text:          var(--smg-ink);
+  --smg-text-muted:    var(--smg-gray-500);
+  --smg-text-invert:   var(--smg-white);
+  --smg-text-brand:    var(--smg-violet);
+
+  --smg-border:        var(--smg-gray-300);
+  --smg-border-subtle: rgba(242, 244, 245, 0.5);   /* barely-there divider on white/light surfaces */
+  --smg-border-inverse:rgba(255, 255, 255, 0.16);  /* hairline on dark/violet/photographic surfaces */
+  --smg-border-strong: var(--smg-ink);
+  --smg-focus:         var(--smg-violet);
+  --smg-focus-ring:    0 0 0 3px rgba(98, 40, 255, 0.12);  /* form fields, checkboxes, keyboard focus */
+}

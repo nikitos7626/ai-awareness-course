@@ -1,0 +1,53 @@
+/* Soft Media Group — Typography tokens
+   Type scale mirrors the SMG deck: TT Norms Pro Medium display (very tight tracking),
+   TT Norms Pro Regular body, Roboto Flex for the wordmark / oversized numerals. */
+
+:root {
+  /* Families — real licensed faces, self-hosted (see fonts.css) */
+  --smg-font-display: "TT Norms Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --smg-font-body:    "TT Norms Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --smg-font-word:    "Roboto Flex", "TT Norms Pro", sans-serif;   /* the smg wordmark & huge stats */
+  --smg-font-alt:     "Gilroy", "TT Norms Pro", sans-serif;        /* alternate headings */
+  --smg-font-ui:      "Roboto", "TT Norms Pro", sans-serif;        /* dense utility text */
+
+  /* Weights */
+  --smg-w-regular: 400;  /* @kind font */
+  --smg-w-medium:  500;  /* @kind font */
+  --smg-w-semibold:600;  /* @kind font */
+  --smg-w-bold:    700;  /* @kind font */
+
+  /* Display sizes (deck rhythm — 1920×1080 stage) */
+  --smg-fs-display:  120px;   /* hero title — TT Norms Pro Medium */
+  --smg-fs-stat:     186px;   /* oversized numerals (e.g. 10%) */
+  --smg-fs-h1:        74px;
+  --smg-fs-h2:        52px;
+  --smg-fs-h3:        40px;
+  --smg-fs-title:     32px;
+  --smg-fs-lead:      48px;   /* lead paragraph */
+  --smg-fs-body:      26px;
+  --smg-fs-body-sm:   24px;
+  --smg-fs-caption:   20px;
+
+  /* Tight display tracking / leading (verbatim from the deck) */
+  --smg-lh-display:   0.9;   /* @kind font */
+  --smg-lh-tight:     0.85;  /* @kind font */
+  --smg-lh-body:      1.1;   /* @kind font */
+  --smg-lh-relaxed:   1.3;   /* @kind font */
+  --smg-tracking-display: -0.03em;
+  --smg-tracking-stat:    -0.05em;
+  --smg-tracking-body:     0.01em;
+
+  /* ==== Web UI roles (softmg.tech) ====
+     The sizes above are tuned for the 1920×1080 deck stage — too large/tight
+     for real product surfaces (forms, nav, footnotes) at normal viewport
+     widths. These seven roles are the actual site's working set; each size
+     keeps exactly one role, no near-duplicates. Use these for website/app
+     UI, the deck scale above for slides and marketing hero moments. */
+  --smg-web-fs-display-xl: 80px;  --smg-web-lh-display-xl: 1.0; /* @kind font */  --smg-web-ls-display-xl: -3.2px;
+  --smg-web-fs-display-lg: 48px;  --smg-web-lh-display-lg: 1.0; /* @kind font */  --smg-web-ls-display-lg: -1.92px;
+  --smg-web-fs-heading-lg: 38px;  --smg-web-lh-heading-lg: 1.0; /* @kind font */  --smg-web-ls-heading-lg: -1.52px;
+  --smg-web-fs-heading-md: 24px;  --smg-web-lh-heading-md: 1.0; /* @kind font */  --smg-web-ls-heading-md: -0.48px;
+  --smg-web-fs-body-md:    16px;  --smg-web-lh-body-md:    1.5; /* @kind font */  --smg-web-ls-body-md:     0; /* @kind font */
+  --smg-web-fs-label-md:   16px;  --smg-web-lh-label-md:   1.2; /* @kind font */  --smg-web-ls-label-md:   -0.32px;
+  --smg-web-fs-label-sm:   14px;  --smg-web-lh-label-sm:   1.2; /* @kind font */  --smg-web-ls-label-sm:   -0.28px;
+}

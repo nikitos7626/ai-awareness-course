@@ -1,0 +1,10 @@
+/* Fonts used by the extension must live in /fonts.
+   Do not reference .claude/skills/smg-design from production CSS. */
+
+@import './tokens/fonts.css';
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
+@import './tokens/breakpoints.css';
+
+/* Figma-materialized tokens & text styles (optional) */
