@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { QuizWidget } from '../components/course/QuizWidget';
-import { COURSE_MODULES } from '../data/courseData';
+import { QuizWidget } from '../../src/components/course/QuizWidget';
+import { COURSE_MODULES } from '../../src/data/courseData';
 
 describe('QuizWidget component', () => {
   const sampleQuiz = COURSE_MODULES[0].quizCase;

@@ -30,17 +30,17 @@ npm run build
 # Запуск модульных и интеграционных тестов (13 тестов Vitest)
 npm test
 
-# Запуск всех E2E тестов в реальном браузере Chromium (120 тестов Playwright)
+# Запуск всех E2E тестов в реальном браузере Chromium (121 тест Playwright)
 npm run test:e2e
 
 # Полный аудит ссылок и UX/UI элементов сайта (23 теста)
-npx playwright test e2e/links-and-ux-ui-audit.spec.ts
+npx playwright test tests/e2e/links-and-ux-ui-audit.spec.ts
 
-# Проверка строгого соответствия стилю design.md (37 тестов)
-npx playwright test e2e/design-system-compliance.spec.ts
+# Проверка строгого соответствия стилю design.md (38 тестов)
+npx playwright test tests/e2e/design-system-compliance.spec.ts
 
 # Визуальный аудит и скриншоты брейкпоинтов (58 тестов)
-npx playwright test e2e/visual-audit.spec.ts
+npx playwright test tests/e2e/visual-audit.spec.ts
 ```
 
 ---

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import App from '../App';
+import App from '../../src/App';
 
 describe('App component (Integration Test)', () => {
   beforeEach(() => {

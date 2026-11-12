@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
-import { useCourseProgress } from '../hooks/useCourseProgress';
+import { useCourseProgress } from '../../src/hooks/useCourseProgress';
 
 describe('useCourseProgress hook', () => {
   beforeEach(() => {

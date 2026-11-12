@@ -11,7 +11,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import path from 'node:path';
 
-const SCREENSHOT_DIR = path.resolve('e2e/screenshots');
+const SCREENSHOT_DIR = path.resolve('tests/e2e/screenshots');
 
 /* ───────────────────── SMG Token Reference ───────────────────── */
 const SMG = {

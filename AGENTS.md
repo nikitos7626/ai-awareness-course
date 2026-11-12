@@ -13,8 +13,9 @@
 ## 2. Архитектура и структура файлов
 ```
 Project_test/
-├── e2e/                           # E2E тесты Playwright (Desktop + Mobile 360px)
-│   └── course.spec.ts
+├── tests/                         # Все автотесты проекта
+│   ├── unit/                      # Модульные и интеграционные тесты Vitest
+│   └── e2e/                       # E2E тесты Playwright (Desktop + Mobile 360px)
 ├── public/
 │   ├── assets/img/                # Фирменные фоны SMG (bg-violet-1.png)
 │   ├── assets/logo/               # Векторные знаки SMG (mark.svg, mark-transparent.svg)
